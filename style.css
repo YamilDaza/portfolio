@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* Navbar start */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background-color: brown;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+}
+.navbar .logo a span{
+    color: brown;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3 ease;
+}
+.navbar .menu li a:hover{
+    color: brown;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+    border-bottom:2px solid rgb(146, 142, 142);
+}
+
+/* btn menu responsive */
+.menu-btn{    
+    color:rgb(255, 255, 255);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Home start */
+.home{
+    display: flex;
+    background-color: rgb(0, 0, 0); /*URL DE FONDO ADD: background-size:cover background-attachment:fixed*/
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Nunito', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+
+}
+.home .home-content .text-1{
+    font-size: 27px;
+
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: brown;
+    font-weight: 500;
+}
+.home .home-content a{
+    display:inline-block;
+    background-color: brown;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid brown;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: #fff;
+    background: none;
+}
+
+
+/* About */
+section{
+    padding: 100px 0;
+}
+.about, .skills, .projects, .contact, footer{
+    font-family: 'Nunito', sans-serif;
+}
+.about, .about-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about{
+    font-family: 'Nunito', sans-serif;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+    border: 2px solid #111;
+    border-radius: 10px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: brown;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display:inline-block;
+    background-color: brown;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid brown;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: brown;
+    background: none;
+}
+
+
+/* Skills */
+.skills .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display:inline-block;
+    background-color: brown;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid brown;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: brown;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 10px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skills .skills-content .right .info img{
+    width: 70px;
+    margin: 5px 10px;
+}
+
+/* Projects */
+.projects .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+.projects .carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Contact */
+.contact .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: brown;
+    
+}
+.contact .contact-content .row .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .row .info .sub-title{
+    color: #333;
+}
+.contact .right{
+    margin-top: -30px;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .fields,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact .right form .textarea{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid lightgray; */
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 100%;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid brown;
+    border-radius: 5px;
+    background: brown;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color: brown;
+    background: none;
+}
+
+/* footer */
+footer{
+    background: #111;
+    padding: 20px 23px ;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: brown;
+}
+footer span a:hover{
+    color: lightgray;
+}
+
+
+
+
+
+
+
+
+/* Media query */
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+    
+}
+
+
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+       
+    }
+    .menu-btn i.active:before{
+        content: "\F62A";
+    }
+    .navbar .menu{
+        position: fixed;
+        background-color: #111;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display:block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 75px;
+    }
+    .home .home-content .text-3{
+        font-size: 30px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 60%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .skills .skills-content .left{
+        text-align: center;
+    }
+}
+
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 25px;
+    }
+    .home .home-content a{
+        font-size: 17px;
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width: 500px){
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 18px;
+    }
+}
+
+
+
+
+
